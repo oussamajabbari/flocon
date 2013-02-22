@@ -1,3 +1,15 @@
+# Eclipse files
+.cproject
+.project
+.settings/
+
+# Cmake
+build/
+
+# Misc
+images.jpeg
+mer.JPG
+
 *.dcu
 *.~*~
 *.local
