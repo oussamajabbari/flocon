@@ -14,7 +14,7 @@ using namespace std;
 
 int main()
 {
-    // Fenêtre de rendu
+    // Fenetre de rendu
     RenderWindow app(VideoMode(600, 600, 32), "Mon superbe polygone SFML !");
 
     // Activate verticale synchronisation in order to have
@@ -52,7 +52,7 @@ int main()
         Event event;
         while (app.GetEvent(event))
         {
-            // Fenêtre fermée : on quitte
+            // Fenetre fermee : on quitte
             if (event.Type == Event::Closed)
                 app.Close();
         }
@@ -61,14 +61,14 @@ int main()
 
         cout << "Framerate : " << Framerate << endl;
 
-        // Efface l'écran (remplissage avec du noir)
+        // Efface l'ecran (remplissage avec du noir)
         app.Clear();
 
-        // Affichage de notre point dans la fenêtre
+        // Affichage de notre point dans la fenetre
         app.Draw(sprite);
         app.Draw(monPoint);
 
-        // Affichage du contenu de la fenêtre à l'écran
+        // Affichage du contenu de la fenetre e l'ecran
         app.Display();
 
     }
