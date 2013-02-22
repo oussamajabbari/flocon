@@ -63,8 +63,16 @@ int main()
     for (int i = 0; i < width; i++)
     {
     	// Put the G and B off
-        backgroundPixels[4 * (500 * width + i) + 1] = 0;
-        backgroundPixels[4 * (500 * width + i) + 2] = 0;
+        backgroundPixels[4 * ((500+(i/8)) * width + i) + 1] = 0;
+        backgroundPixels[4 * ((500+(i/8)) * width + i) + 2] = 0;
+    }
+
+    // Add a red line in the background
+    for (int i = 0; i < width; i++)
+    {
+    	// Put the G and B off
+        backgroundPixels[4 * ((600-(i/8)) * width + i) + 1] = 0;
+        backgroundPixels[4 * ((600-(i/8)) * width + i) + 2] = 0;
     }
 
     //-------------------------------------------------------------
